@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <ScrollView
+        android:id="@+id/scu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/tv_tttu"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACCOUNT INFORMATION"
+                />
+
+
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/tv_tttu"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:id="@+id/et_create_nameuqq" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:editable="false"
+                android:id="@+id/et_create_mnouqq"
+                android:textSize="20dp"
+                android:layout_below="@+id/et_create_nameuqq"
+                />
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:id="@+id/et_create_emailuqq"
+                android:layout_below="@+id/et_create_mnouqq"
+                />
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/et_create_postaluqq"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:layout_below="@+id/et_create_emailuqq"
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:id="@+id/et_create_passworduqq"
+                android:layout_below="@+id/et_create_postaluqq"
+                />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/et_create_passworduqq"
+                android:text="UPDATE"
+                android:visibility="invisible"
+                android:layout_margin="10dp"
+                android:id="@+id/btn_create_submituqq"
+
+                android:background="@color/colorPrimaryDark"
+                />
+
+
+
+
+            <RelativeLayout
+                android:background="@drawable/garage"
+                android:layout_below="@id/btn_create_submituqq"
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

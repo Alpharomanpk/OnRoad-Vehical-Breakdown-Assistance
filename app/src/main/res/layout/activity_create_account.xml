@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Create_account">
+
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/tv_ttt"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE ACCOUNT"
+                />
+
+
+
+<EditText
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/tv_ttt"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:hint="Enter Name"
+    android:id="@+id/et_create_name"
+
+    />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Mobile Number"
+        android:id="@+id/et_create_mno"
+        android:inputType="numberDecimal"
+
+        />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Email Address"
+        android:id="@+id/et_create_email"
+        android:inputType="textEmailAddress"
+
+        />
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/et_create_city"
+               android:entries="@array/city"
+                />
+
+
+            <TextView
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Choose Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+
+
+            <RadioGroup
+                android:id="@+id/gender_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/gender_male"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/gender_female"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></RadioButton>
+
+
+            </RadioGroup>
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Enter Postal  Address"
+                android:id="@+id/et_create_postal"
+                android:inputType="textPostalAddress"
+
+                />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:id="@+id/et_create_password"
+        android:layout_below="@+id/et_create_postal"
+        />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/et_create_password"
+        android:text="SUBMIT"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_create_submit"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        />
+
+
+
+
+        <RelativeLayout
+            android:background="@drawable/garage"
+            android:layout_below="@id/btn_create_submit"
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+
+
+        </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

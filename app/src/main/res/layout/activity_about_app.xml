@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/garage">
+
+
+
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROJECT TITLE"
+        android:id="@+id/tv_title"
+        android:textSize="20dp"
+        android:gravity="center"
+
+        />
+
+
+
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPED BY"
+        android:id="@+id/tv_designed"
+        android:textSize="20dp"
+
+        android:layout_below="@+id/tv_title"
+
+        />
+
+
+
+
+
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/tv_member"
+        android:textSize="20dp"
+        android:layout_below="@+id/tv_designed"
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

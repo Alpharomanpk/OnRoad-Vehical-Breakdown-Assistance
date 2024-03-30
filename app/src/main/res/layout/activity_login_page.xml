@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Login_page">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="LOGIN HERE"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:textColor="@color/colorPrimaryDark"
+    android:layout_margin="20dp"
+    android:id="@+id/login_ttt"
+    />
+
+    <EditText
+        android:layout_below="@+id/login_ttt"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Mobile Number"
+        android:inputType="numberDecimal"
+        android:id="@+id/et_login_mno"
+        />
+
+
+
+
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Password"
+        android:id="@+id/et_login_password"
+        android:layout_below="@id/et_login_mno"
+        />
+
+
+
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_margin="20dp"
+        android:text="Login"
+        android:minHeight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_login_password"
+        android:id="@+id/btn_login_login"
+        />
+
+
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/btn_login_create"
+        android:text="Create New Account"
+        android:minHeight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login_login"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        />
+
+
+<RelativeLayout
+    android:layout_below="@id/btn_login_create"
+    android:background="@drawable/garage"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"></RelativeLayout>
+
+
+</RelativeLayout>
